@@ -15,7 +15,8 @@ RUN microdnf update && microdnf install util-linux curl tar
 
 ARG USERNAME
 ARG PASSWORD
-ARG DOWNLOAD_URL=http://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/integration/12.0.4.0-ACE-LINUX64-DEVELOPER.tar.gz
+#ARG DOWNLOAD_URL=http://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/integration/12.0.4.0-ACE-LINUX64-DEVELOPER.tar.gz
+ARG DOWNLOAD_URL=https://iwm.dhe.ibm.com/sdfdl/v2/regs2/mbford/Xa.2/Xb.WJL1CuPI9gANX1QcrGVXqLm8R3Z9hT_z6mpcVFZMeWs/Xc.12.0.8.0-ACE-LINUX64-DEVELOPER.tar.gz/Xd./Xf.lPr.D1vk/Xg.12236614/Xi.swg-wmbfd/XY.regsrvs/XZ._OlDET6JkawrJ7N3CNOnkvr8SPnOO-hz/12.0.8.0-ACE-LINUX64-DEVELOPER.tar.gz
 
 RUN mkdir -p /opt/ibm/ace-12 \
     && if [ -z $USERNAME ]; then curl ${DOWNLOAD_URL}; else curl -u "${USERNAME}:${PASSWORD}" ${DOWNLOAD_URL}; fi | \

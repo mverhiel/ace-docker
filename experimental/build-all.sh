@@ -2,8 +2,8 @@
 
 # Later versions from the same site, or else via the Developer edition download site linked from
 # https://www.ibm.com/docs/en/app-connect/12.0?topic=enterprise-download-ace-developer-edition-get-started
-export DOWNLOAD_URL=http://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/integration/12.0.7.0-ACE-LINUX64-DEVELOPER.tar.gz
-export PRODUCT_VERSION=12.0.7.0
+export DOWNLOAD_URL=https://iwm.dhe.ibm.com/sdfdl/v2/regs2/mbford/Xa.2/Xb.WJL1CuPI9gANX1QcrGVXqLm8R3Z9hT_z6mpcVFZMeWs/Xc.12.0.8.0-ACE-LINUX64-DEVELOPER.tar.gz/Xd./Xf.lPr.D1vk/Xg.12236614/Xi.swg-wmbfd/XY.regsrvs/XZ._OlDET6JkawrJ7N3CNOnkvr8SPnOO-hz/12.0.8.0-ACE-LINUX64-DEVELOPER.tar.gz
+export PRODUCT_VERSION=12.0.8.0
 export PRODUCT_LABEL=ace-${PRODUCT_VERSION}
 
 export DOWNLOAD_CONNECTION_COUNT=1
